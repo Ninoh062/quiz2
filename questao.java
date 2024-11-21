@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Questao {
+public class questao {
    Scanner ler = new Scanner(System.in);
    String pergunta = "";
    String opcaoA = "";
@@ -11,7 +11,7 @@ public class Questao {
    String correta = "";
    Boolean qntCorreta;
 
-   public Questao(String pergunta, String opcaoA, String opcaoB, String opcaoC, String opcaoD, String opcaoE, String correta) {
+   public questao(String pergunta, String opcaoA, String opcaoB, String opcaoC, String opcaoD, String opcaoE, String correta) {
     this.pergunta = pergunta;
     this.opcaoA = opcaoA;
     this.opcaoB = opcaoB;

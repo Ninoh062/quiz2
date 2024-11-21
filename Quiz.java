@@ -153,19 +153,21 @@ Questao q15 = new Questao(
 );
 
 
-
-
     
-
-    Questao [] qstList = {q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15};
+    questao [] qstList = {q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15};
     int cont = 0;
+    int total = qstList.length;
 
     for(Questao temp : qstList){
         if (temp.qntCorreta) {
             cont ++;
         }
     }
-    System.out.println(cont+" Acertos");//#teste commit
+    System.out.println(cont+" Acertos");
+
+    double porcentagem = (cont * 100.0) / total;
+        System.out.println(porcentagem + "% de Acerto"); 
+
     
 
 

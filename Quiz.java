@@ -1,8 +1,9 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Quiz {
     public static void main(String[] args) {
-    Questao q1 = new Questao(
+    questao q1 = new questao(
         "1) Qual o melhor jogador de basquete atualmente?",
         "A) Stephen Curry",
         "B) Kyrie Irving",
@@ -12,7 +13,7 @@ public class Quiz {
         "D"
 );
 
-Questao q2 = new Questao(
+questao q2 = new questao(
     "2) Qual é o maior planeta do sistema solar?",
     "A) Terra",
     "B) Marte",
@@ -22,7 +23,7 @@ Questao q2 = new Questao(
     "C"
 );
 
-Questao q3 = new Questao(
+questao q3 = new questao(
     "3) Quem escreveu 'Dom Quixote'?",
     "A) William Shakespeare",
     "B) Gabriel Garcia Marquez",
@@ -32,7 +33,7 @@ Questao q3 = new Questao(
     "D"
 );
 
-Questao q4 = new Questao(
+questao q4 = new questao(
     "4) Qual é o país mais populoso do mundo?",
     "A) Brasil",
     "B) Índia",
@@ -42,7 +43,7 @@ Questao q4 = new Questao(
     "D"
 );
 
-Questao q5 = new Questao(
+questao q5 = new questao(
     "5) Qual é o símbolo químico do Ouro?",
     "A) Au",
     "B) Ag",
@@ -52,7 +53,7 @@ Questao q5 = new Questao(
     "A"
 );
 
-Questao q6 = new Questao(
+questao q6 = new questao(
     "6) Qual desses é um filme do diretor Christopher Nolan?",
     "A) Titanic",
     "B) Inception",
@@ -62,7 +63,7 @@ Questao q6 = new Questao(
     "B"
 );
 
-Questao q7 = new Questao(
+questao q7 = new questao(
     "7) Em qual continente fica o deserto do Saara?",
     "A) América do Sul",
     "B) Ásia",
@@ -72,7 +73,7 @@ Questao q7 = new Questao(
     "C"
 );
 
-Questao q8 = new Questao(
+questao q8 = new questao(
     "8) Qual é a língua oficial do Brasil?",
     "A) Espanhol",
     "B) Inglês",
@@ -82,7 +83,7 @@ Questao q8 = new Questao(
     "C"
 );
 
-Questao q9 = new Questao(
+questao q9 = new questao(
     "9) Em que ano o homem pisou na Lua pela primeira vez?",
     "A) 1965",
     "B) 1969",
@@ -92,7 +93,7 @@ Questao q9 = new Questao(
     "B"
 );
 
-Questao q10 = new Questao(
+questao q10 = new questao(
     "10) Qual é o elemento mais abundante na atmosfera terrestre?",
     "A) Oxigênio",
     "B) Hidrogênio",
@@ -102,7 +103,7 @@ Questao q10 = new Questao(
     "C"
 );
 
-Questao q11 = new Questao(
+questao q11 = new questao(
     "11) Quem pintou a obra 'Mona Lisa'?",
     "A) Michelangelo",
     "B) Leonardo da Vinci",
@@ -112,7 +113,7 @@ Questao q11 = new Questao(
     "B"
 );
 
-Questao q12 = new Questao(
+questao q12 = new questao(
     "12) Qual é o esporte mais praticado no mundo?",
     "A) Tênis",
     "B) Basquete",
@@ -122,7 +123,7 @@ Questao q12 = new Questao(
     "C"
 );
 
-Questao q13 = new Questao(
+questao q13 = new questao(
     "13) Qual desses países é famoso por suas pirâmides antigas?",
     "A) Itália",
     "B) México",
@@ -132,7 +133,7 @@ Questao q13 = new Questao(
     "C"
 );
 
-Questao q14 = new Questao(
+questao q14 = new questao(
     "14) Qual é a moeda oficial do Japão?",
     "A) Dólar",
     "B) Yuan",
@@ -142,7 +143,7 @@ Questao q14 = new Questao(
     "D"
 );
 
-Questao q15 = new Questao(
+questao q15 = new questao(
     "15) Qual desses animais é um mamífero?",
     "A) Crocodilo",
     "B) Tubarão",
@@ -158,7 +159,7 @@ Questao q15 = new Questao(
     int cont = 0;
     int total = qstList.length;
 
-    for(Questao temp : qstList){
+    for(questao temp : qstList){
         if (temp.qntCorreta) {
             cont ++;
         }
@@ -166,7 +167,8 @@ Questao q15 = new Questao(
     System.out.println(cont+" Acertos");
 
     double porcentagem = (cont * 100.0) / total;
-        System.out.println(porcentagem + "% de Acerto"); 
+        DecimalFormat df = new DecimalFormat("#.0");
+        System.out.println(df.format(porcentagem) + "% de Acerto"); 
 
     
 

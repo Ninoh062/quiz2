@@ -49,7 +49,7 @@ questao q5 = new questao(
     "B) Ag",
     "C) Fe",
     "D) Hg",
-    "E) Pb",
+    "E) Cu",
     "A"
 );
 

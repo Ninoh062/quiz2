@@ -69,7 +69,7 @@ questao q7 = new questao(
     "B) Ásia",
     "C) África",
     "D) Europa",
-    "E) Oceania",
+    "E) América do Norte",
     "C"
 );
 

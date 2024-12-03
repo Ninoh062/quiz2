@@ -119,7 +119,7 @@ questao q12 = new questao(
     "B) Basquete",
     "C) Futebol",
     "D) Vôlei",
-    "E) Rugby",
+    "E) Natação",
     "C"
 );
 

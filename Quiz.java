@@ -79,7 +79,7 @@ questao q8 = new questao(
     "B) Inglês",
     "C) Português",
     "D) Italiano",
-    "E) Francês",
+    "E) Chinês",
     "C"
 );
 

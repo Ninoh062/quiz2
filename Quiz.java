@@ -58,7 +58,7 @@ questao q6 = new questao(
     "A) Titanic",
     "B) Inception",
     "C) Forrest Gump",
-    "D) Gladiador",
+    "D) Rambo",
     "E) Matrix",
     "B"
 );

@@ -107,7 +107,7 @@ questao q11 = new questao(
     "11) Quem pintou a obra 'Mona Lisa'?",
     "A) Michelangelo",
     "B) Leonardo da Vinci",
-    "C) Rafael",
+    "C) Michael Jackson",
     "D) Vincent van Gogh",
     "E) Pablo Picasso",
     "B"
